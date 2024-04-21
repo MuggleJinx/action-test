@@ -4,6 +4,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      # - uses: actions/checkout@v2
+      - name: Run tests
+        run: |
+          echo "Hello, World!"
+      - name: Insert one-line to readme
+        run: |
+          echo "Hello, World!" >> README.md
+  test2:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: Run tests
         run: |
